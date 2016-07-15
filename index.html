@@ -1,0 +1,305 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400' rel='stylesheet' type='text/css'>
+<title>Pere Ayats | Web and Android Developer</title>
+<meta name="description" content="I am Pere Ayats: Web and Android developer">
+<meta name="keywords" content="Web,Android,Developer,Pere,Ayats,PHP,HTML,Java">
+<meta name="author" content="Pere Ayats">
+<meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(function(){
+
+     $('a[href*=#]').click(function() {
+
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+
+             var $target = $(this.hash);
+
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+             if ($target.length) {
+
+                 var targetOffset = $target.offset().top;
+
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                 return false;
+
+            }
+
+       }
+
+   });
+
+});
+</script>
+<style type="text/css">
+body {
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#home {
+	width: 100%;
+	background-image: url("home.jpg");
+	background-repeat: no-repeat;
+	background-position: right center;
+	text-align: center;
+}
+
+#home #top {
+	font-family: 'Lato', sans-serif;
+	font-size: 10em;
+	color: white;
+	font-weight: 200;
+	padding-top: 1em;
+}
+
+#home #bottom {
+	font-family: 'Lato', sans-serif;
+	font-size: 4em;
+	color: #96f8e3;
+	font-weight: 300;
+	padding-top: 0.2em;
+	padding-bottom: 3em;
+}
+
+#home #view {
+	font-family: 'Lato', sans-serif;
+	font-size: 2.8em;
+	color: white;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 3px solid white;
+	padding: 0.3em;
+	font-weight: 300;
+	text-decoration: none;
+	-webkit-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-ms-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+
+#home #view:hover {
+	color: #424242;
+	background-color: white;
+}
+  
+.space {
+    padding: 50px;
+    background-color: transparent;
+}
+
+#work {
+	border-top: 2px solid #D8D8D8;
+	width: 100%;
+	background-color: #E6E6E6;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#work #title {
+	font-family: 'Lato', sans-serif;
+	font-size: 4em;
+	color: #424242;
+	font-weight: 300;
+	padding-top: 0.8em;
+	padding-bottom: 0.1em;
+}
+
+.line {
+	width: 8em;
+	background-color: #96f8e3;
+	height: 5px;
+	border-radius: 4px;
+	margin-bottom: 4em;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#work .content {
+	text-align: center;
+	margin: auto;
+	display: inline-block;
+	-webkit-transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-ms-transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	transition: all 1000ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+}
+
+#work .content:hover {
+	background-color: rgba(150, 248, 227, 0.5);
+	border-radius: 6px;
+}
+
+#work .content a {
+    text-decoration: none;
+}
+  
+#work .content .text {
+	font-family: 'Lato', sans-serif;
+	float: left;
+	padding-top: 5em;
+	padding-left: 1.5em;
+}
+
+#work .content .text .name {
+	font-size: 3em;
+	color: #424242;
+	font-weight: 300;
+	text-align: justify;
+}
+
+#work .content .text .subname {
+	font-size: 1.5em;
+	color: #2fdab8;
+	font-weight: 300;
+	text-align: justify;
+	padding-bottom: 0.5em;
+}
+
+#work .content .text .desc {
+	font-size: 1.2em;
+	color: #424242;
+	font-weight: 200;
+	text-align: justify;
+}
+
+#work .content .photo {
+	float: left;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+#work #get a {
+	font-family: 'Lato', sans-serif;
+	font-size: 2.8em;
+	color: #424242;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 3px solid #424242;
+	padding: 0.3em;
+	font-weight: 300;
+	text-decoration: none;
+	-webkit-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-ms-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+}
+
+#work #get a:hover {
+	color: white;
+	background-color: #424242;
+}
+
+#contact {
+	border-top: 2px solid #8FEED9;
+	width: 100%;
+	background-color: #96f8e3;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#contact .top {
+	font-family: 'Lato', sans-serif;
+	font-size: 4em;
+	color: #424242;
+	font-weight: 300;
+	padding-top: 0.8em;
+	padding-bottom: 0.1em;
+}
+
+.line2 {
+	width: 8em;
+	background-color: #2fdab8;
+	height: 5px;
+	border-radius: 4px;
+	margin-bottom: 4em;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact .field {
+	font-family: 'Lato', sans-serif;
+	font-size: 3em;
+	color: #424242;
+	font-weight: 300;
+	padding: 8px;
+	padding-left: 10px;
+	background-color: white;
+	border: 0;
+	border-radius: 4px;
+	margin-bottom: 1.5em;
+	width: 60%;
+}
+
+#contact .submit {
+	font-family: 'Lato', sans-serif;
+	font-size: 2.8em;
+	color: #2fdab8;
+	background-color: transparent;
+	border-radius: 4px;
+	border: 3px solid #2fdab8;
+	padding: 0.3em;
+	font-weight: 300;
+	text-decoration: none;
+	-webkit-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-moz-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-ms-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	-o-transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	transition: all 800ms cubic-bezier(0.420, 0.000, 0.580, 1.000);
+	width: 30%;
+}
+
+#contact .submit:hover {
+	color: #96f8e3;
+	background-color: #2fdab8;
+}
+</style>
+</head>
+<body>
+
+<div id="home"><div id="top">Hello, I&#39;m Pere</div><div id="bottom">Web &amp; Android developer</div><a href="#work" id="view">View my work</a><div class="space"></div>
+</div>
+
+<center>
+<div id="work"><div id="title">My work</div><div class="line"></div><div class="content" align="center"><a href="http://crawly.pereayats.com" target="_blank"><div class="text"><div class="name">Crawly</div><div class="subname">PHP | HTML</div>
+<div class="desc">Crawly is a web crawler that allows you to add as many links as you want<br>It is a beta version, so the database is still in progress</div></div>
+<div class="photo"><img src="crawly.png" width="360" height="292" /></div></a></div>
+
+<div class="content" align="center" style="margin-top: 5em; margin-bottom: 8em;"><a href="http://panasia.cat" target="_blank"><div class="text"><div class="name">Pa N&agrave;sia</div><div class="subname">HTML | CSS</div>
+<div class="desc">Pa N&agrave;sia is a bakery from Catalonia. Its website consists of a home page <br>created with HTML and CSS. This is only a Front-End project</div></div>
+<div class="photo"><img src="panasia.png" width="360" height="292" /></div></a></div>
+
+
+<div id="get" style="margin-bottom: 5em;">
+<a href="#contact">Get in touch</a>
+</div>
+<br>
+</div>
+</center>
+
+<div id="contact">
+
+<div class="top">Get in touch</div><div class="line2"></div>
+<form action="#contact" method="post">
+		<input type="text" name="name" class="field" placeholder="Type your name">
+		<input type="text" name="mail" class="field" placeholder="Type your mail">
+		<textarea class="field" name="message" cols="25" rows="4" style="margin-bottom: 1em;" placeholder="What&#39;s going on?"></textarea>
+		<br>
+		<input type="submit" class="submit" value="Send">
+		</form><div class="space"></div>
+</div>
+</body>
+</html>
