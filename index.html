@@ -1,96 +1,65 @@
+<!DOCTYPE html>
 <html>
 <head>
-<link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400' rel='stylesheet' type='text/css'>
-<title>Pere Ayats | Web and Android Developer</title>
-<meta name="description" content="I am Pere Ayats: Web and Android developer">
-<meta name="keywords" content="Web,Android,Developer,Pere,Ayats,PHP,HTML,Java">
-<meta name="author" content="Pere Ayats">
-<meta charset="UTF-8">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
-type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript">
-$(function(){
+<title>Pere Ayats</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/png" href="img/logo.png"/>
 
-     $('a[href*=#]').click(function() {
+<!-- Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-         && location.hostname == this.hostname) {
+<!-- CSS -->
+<link href='css/style.css' rel='stylesheet' type='text/css'>
 
-             var $target = $(this.hash);
+<!-- JQUERY -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
 
-             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+<!-- BOOTSTRAP -->
+<link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
-             if ($target.length) {
-
-                 var targetOffset = $target.offset().top;
-
-                 $('html,body').animate({scrollTop: targetOffset}, 1000);
-
-                 return false;
-
-            }
-
-       }
-
-   });
-
-});
-</script>
-<style type="text/css">
-body {
-	padding: 0;
-	margin: 0 auto;
-	text-align: center;
-}
-
-#contact {
-	border-top: 2px solid #8FEED9;
-	width: 100%;
-	background-color: #96f8e3;
-	text-align: center;
-	margin: 0 auto;
-	width: 100%;
-}
-
-#contact .top {
-	font-family: 'Lato', sans-serif;
-	font-size: 4em;
-	color: #2fdab8;
-	font-weight: 300;
-	padding-top: 0.8em;
-	padding-bottom: 0.1em;
-	margin-top: 120px;
-}
-
-.line2 {
-	width: 8em;
-	background-color: #2fdab8;
-	height: 5px;
-	border-radius: 4px;
-	margin-bottom: 4em;
-	margin-top: 0;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#contact img {
-	margin-top: 5px;
-	height: 40px;
-	width: auto;
-}
-
-</style>
 </head>
+
 <body>
 
-<div id="contact" style="height: 100vh;">
-	<div class="top">
-		We'll be back soon!<br>
-		<a href="mailto:pere@pereayats.com" target="_blank"><img src="email.png" /></a>
-		<a href="http://twitter.com/pereayats" target="_blank"><img src="twitter.png" /></a>
-		<a href="http://instagram.com/pereayats" target="_blank"><img src="instagram.png" /></a>
+<!-- HOME -->
+<section id="home">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<a href="/" id="logo"><img src="img/logo.png" style="width: 125px; height: 125px" /></a>
+				<h1>Hi, I'm Pere</h1>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="social">
+					<a href="mailto:pere@pereayats.com" target="_blank"><img src="img/email.png" /></a>
+					<a href="http://twitter.com/pereayats" target="_blank"><img src="img/twitter.png" /></a>
+					<a href="http://instagram.com/pereayats" target="_blank"><img src="img/instagram.png" /></a>
+				</div>
+			</div>	
+		</div>
 	</div>
-</div>
+</section>
+<!-- END HOME -->
 
+<!-- PORTFOLIO -->
+<section id="portfolio">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Portfolio</h2>
+				<div class="underli"></div>
+			</div>	
+		</div>
+	</div>
+</section>
+<!-- END PORTFOLIO -->
+
+<!-- JS -->
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,96 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Lato:100,200,300,400' rel='stylesheet' type='text/css'>
+<title>Pere Ayats | Web and Android Developer</title>
+<meta name="description" content="I am Pere Ayats: Web and Android developer">
+<meta name="keywords" content="Web,Android,Developer,Pere,Ayats,PHP,HTML,Java">
+<meta name="author" content="Pere Ayats">
+<meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+$(function(){
+
+     $('a[href*=#]').click(function() {
+
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+
+             var $target = $(this.hash);
+
+             $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+
+             if ($target.length) {
+
+                 var targetOffset = $target.offset().top;
+
+                 $('html,body').animate({scrollTop: targetOffset}, 1000);
+
+                 return false;
+
+            }
+
+       }
+
+   });
+
+});
+</script>
+<style type="text/css">
+body {
+	padding: 0;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#contact {
+	border-top: 2px solid #8FEED9;
+	width: 100%;
+	background-color: #96f8e3;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+}
+
+#contact .top {
+	font-family: 'Lato', sans-serif;
+	font-size: 4em;
+	color: #2fdab8;
+	font-weight: 300;
+	padding-top: 0.8em;
+	padding-bottom: 0.1em;
+	margin-top: 120px;
+}
+
+.line2 {
+	width: 8em;
+	background-color: #2fdab8;
+	height: 5px;
+	border-radius: 4px;
+	margin-bottom: 4em;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact img {
+	margin-top: 5px;
+	height: 40px;
+	width: auto;
+}
+
+</style>
+</head>
+<body>
+
+<div id="contact" style="height: 100vh;">
+	<div class="top">
+		We'll be back soon!<br>
+		<a href="mailto:pere@pereayats.com" target="_blank"><img src="img/email.png" /></a>
+		<a href="http://twitter.com/pereayats" target="_blank"><img src="img/twitter.png" /></a>
+		<a href="http://instagram.com/pereayats" target="_blank"><img src="img/instagram.png" /></a>
+	</div>
+</div>
+
+</body>
+</html>
